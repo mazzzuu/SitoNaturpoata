@@ -2,7 +2,6 @@ import Card from "./Card";
 import { cardData } from "../constants/index";
 import WhatsAppButton from "./WhatsAppButton";
 import Footer from "./Footer";
-import CoursesCarousel from "./ResponsiveImageGallery";
 import ResponsiveImageGallery from "./ResponsiveImageGallery";
 
 function Home() {
