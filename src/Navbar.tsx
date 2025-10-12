@@ -21,7 +21,6 @@ export default function Navbar() {
           <a href="/home#contatti" className="text-gray-900 text-lg font-medium hover:text-green-500">
             Contatti
           </a>
-          <a href="/login" className="text-gray-900 text-lg font-medium hover:text-green-500">Login</a>
         </div>
       </div>
     </nav>
