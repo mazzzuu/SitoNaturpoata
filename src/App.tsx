@@ -1,9 +1,8 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./Home";
 import Contatti from "./Contatti";
 import Navbar from "./Navbar";
 import Layout from "./Layot";
-
 
 function App() {
   return (
@@ -11,9 +10,9 @@ function App() {
       <Navbar />
       <Layout>
         <Routes>
+          <Route path="/" element={<Navigate to="/home" replace />} />
           <Route path="/home" element={<Home />} />
           <Route path="/contatti" element={<Contatti />} />
-          
         </Routes>
       </Layout>
     </Router>
