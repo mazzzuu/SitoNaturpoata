@@ -1,11 +1,11 @@
 import Card from "./Card";
 import { cardData } from "../constants/index";
 import WhatsAppButton from "./WhatsAppButton";
-
+import Footer from "./Footer";
+import CoursesCarousel from "./ResponsiveImageGallery";
+import ResponsiveImageGallery from "./ResponsiveImageGallery";
 
 function Home() {
-
-
   return (
     <div id="home" className="bg-white text-gray-900">
       {/* Hero Section */}
@@ -26,20 +26,14 @@ function Home() {
       <section className="max-w-6xl mx-auto py-12 px-6 text-center">
         <h2 className="text-3xl font-bold">Chi siamo</h2>
         <p className="mt-4 text-gray-700">
-          Siamo un centro specializzato in naturopatia, dedicato al benessere naturale attraverso trattamenti olistici e
-          consulenze personalizzate.
+          Siamo un centro specializzato in naturopatia, dedicato al benessere
+          naturale attraverso trattamenti olistici e consulenze personalizzate.
         </p>
       </section>
 
-
-
-      <section className="max-w-6xl mx-auto py-12 px-6 text-center">
-        <h2 className="text-3xl font-bold">Corsi ed Eventi</h2>
-        <p className="mt-4 text-gray-700">
-          //////
-        </p>
+      <section className="w-full text-center py-12">
+        <ResponsiveImageGallery />
       </section>
-
 
       {/* Servizi */}
       <section id="servizi" className="max-w-7xl mx-auto py-12 px-6 relative">
@@ -49,7 +43,13 @@ function Home() {
         {/* Grid or List Toggle */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
           {cardData.map((item) => (
-            <Card title={item.title} content={item.content} key={item.key} imageUrl={item.imageUrl} detailedContent={item.detailedContent} />
+            <Card
+              title={item.title}
+              content={item.content}
+              key={item.key}
+              imageUrl={item.imageUrl}
+              detailedContent={item.detailedContent}
+            />
           ))}
         </div>
       </section>
@@ -60,6 +60,7 @@ function Home() {
         <p className="mt-4">Scopri il percorso giusto per il tuo benessere</p>
         <WhatsAppButton />
       </section>
+      <Footer />
     </div>
   );
 }

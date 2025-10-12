@@ -4,9 +4,8 @@ import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
-      <footer id="contatti" className="bg-gray-100 text-gray-900 py-8">
+      <footer id="contatti" className="bg-gray-100 text-gray-900 py-8 ">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-center sm:text-left">
-          
           {/* Dove siamo */}
           <div>
             <h3 className="text-lg font-semibold mb-2">Dove siamo</h3>
