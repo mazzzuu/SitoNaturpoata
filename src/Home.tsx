@@ -22,15 +22,15 @@ function Home() {
       </section>
 
       {/* Chi Siamo */}
-      <section className="max-w-6xl mx-auto py-12 px-6 text-center">
+      <section className="mx-auto py-12 text-center">
         <h2 className="text-3xl font-bold">Chi siamo</h2>
-        <p className="mt-4 text-gray-700">
+        <p className="mt-4 text-gray-700 text-2xl">
           Siamo un centro specializzato in naturopatia, dedicato al benessere
           naturale attraverso trattamenti olistici e consulenze personalizzate.
         </p>
       </section>
 
-      <section className="w-full text-center py-12">
+      <section className="w-full text-center ">
         <ResponsiveImageGallery />
       </section>
 
