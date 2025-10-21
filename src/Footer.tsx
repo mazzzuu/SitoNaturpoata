@@ -10,7 +10,7 @@ function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-2">Dove siamo</h3>
             <p>Lonigo (VI) - Via C. Battisti, 168/E</p>
-            <p>CREAZZO (VI) - Via Petrarca, 37</p>
+            <p>CREAZZO (VI) - Via Cristoforo Colombo, 2</p>
           </div>
   
           {/* Contatti */}
@@ -41,8 +41,8 @@ function Footer() {
             </Link>
 
             </div>
-            <h3 className="text-lg font-semibold mt-4">Informativa sulla Privacy</h3>
-            <a href="/privacy-policy" className="text-blue-500 hover:underline">Leggi qui</a>
+            {/* <h3 className="text-lg font-semibold mt-4">Informativa sulla Privacy</h3>
+            <a href="/privacy-policy" className="text-blue-500 hover:underline">Leggi qui</a> */}
           </div>
   
         </div>
