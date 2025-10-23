@@ -1,21 +1,24 @@
-// vite.config.ts or vite.config.js
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import tailwindcss from 'tailwindcss';
 
-import tailwindcss from '@tailwindcss/vite';
+// Import dinamico per evitare errori TypeScript
+const sitemap = require('vite-plugin-sitemap').default;
+
+const routes = [
+  { path: '/', lastmod: '2025-10-23' },
+  { path: '/home', lastmod: '2025-10-23' },
+  { path: '/about', lastmod: '2025-10-23' },
+  { path: '/contatti', lastmod: '2025-10-23' },
+];
 
 export default defineConfig({
-  plugins: [react(),tailwindcss(), VitePluginSitemap({
-      baseUrl: 'https://nuovanatuopatia.it', // SOSTITUISCI con il tuo dominio
-      outDir: 'dist',
-      contentBase: 'dist',
-      routes: [
-        { path: '/', lastmod: '2025-10-23' },
-        { path: '/home', lastmod: '2025-10-23' },
-        { path: '/contatti', lastmod: '2025-10-23' },
-        // Aggiungi tutte le tue route qui
-      ],
+  plugins: [
+    react(),
+    tailwindcss(),
+    sitemap({
+      baseUrl: 'https://nuovanaturopatia.it',
+      routes,
     }),
   ],
-
 });
