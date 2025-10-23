@@ -55,7 +55,7 @@ function Home() {
 
       {/* Call to Action */}
       <section className="bg-green-500 text-white py-12 text-center">
-        <h2 className="text-3xl font-bold">Prenota una consulenza gratuita</h2>
+        <h2 className="text-3xl font-bold">Prenota una consulenza gratuita di 30 minuti</h2>
         <p className="mt-4">Scopri il percorso giusto per il tuo benessere</p>
         <WhatsAppButton />
       </section>
