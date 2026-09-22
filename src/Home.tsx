@@ -2,8 +2,9 @@ import Card from "./Card";
 import { cardData } from "../constants/index";
 import WhatsAppButton from "./WhatsAppButton";
 import Footer from "./Footer";
-import CoursesCarousel from "./ResponsiveImageGallery";
-import ResponsiveImageGallery from "./ResponsiveImageGallery";
+// import CoursesCarousel from "./ResponsiveImageGallery";
+// import ResponsiveImageGallery from "./ResponsiveImageGallery";
+// tolta la parte degli import per gli eventi
 
 function Home() {
   return (
@@ -25,15 +26,17 @@ function Home() {
       {/* Chi Siamo */}
       <section className="max-w-6xl mx-auto py-12 px-6 text-center">
         <h2 className="text-3xl font-bold">Chi siamo</h2>
-        <p className="mt-4 text-gray-700">
+        <p className="mt-4 text-2xl text-gray-700">
           Siamo un centro specializzato in naturopatia, dedicato al benessere
           naturale attraverso trattamenti olistici e consulenze personalizzate.
         </p>
       </section>
 
-      <section className="w-full text-center py-12">
+
+      {/* tolta la parte degli eventi basta ricomenatrla per attivarla */}
+      {/* <section className="w-full text-center py-12">
         <ResponsiveImageGallery />
-      </section>
+      </section> */}
 
       {/* Servizi */}
       <section id="servizi" className="max-w-7xl mx-auto py-12 px-6 relative">
