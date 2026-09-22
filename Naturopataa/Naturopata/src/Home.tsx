@@ -2,7 +2,8 @@ import Card from "./Card";
 import { cardData } from "../constants/index";
 import WhatsAppButton from "./WhatsAppButton";
 import Footer from "./Footer";
-import ResponsiveImageGallery from "./ResponsiveImageGallery";
+//tolto l'import della galleria degli eventi
+//import ResponsiveImageGallery from "./ResponsiveImageGallery";
 
 function Home() {
   return (
@@ -30,6 +31,8 @@ function Home() {
         </p>
       </section>
 
+
+      {/* Tolta la parte degli eventi basta ricomentare la riga sotto per aggiungerli */}
       {/* <section className="w-full text-center ">
         <ResponsiveImageGallery />
       </section> */}
